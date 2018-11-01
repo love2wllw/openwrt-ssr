@@ -64,10 +64,11 @@ ShadowsocksR-libev for OpenWrt
    tar xjf OpenWrt-SDK-15.05-ar71xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
    cd OpenWrt-SDK-*
    # 安装 feeds
+   ./scripts/feeds update base
    ./scripts/feeds update packages
-   ./scripts/feeds install libpcre
+   ./scripts/feeds install libpcre zlib libopenssl
    # 获取 Makefile
-   git clone https://github.com/ywb94/openwrt-ssr.git package/openwrt-ssr
+   git clone https://github.com/love2wllw/openwrt-ssr.git package/openwrt-ssr
    # 选择要编译的包 
    #luci ->3. Applications-> luci-app-shadowsocksR         原始版本
    #luci ->3. Applications-> luci-app-shadowsocksR-GFW     GFWList版本
